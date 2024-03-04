@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cartella',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./cartella.component.css']
 })
 export class CartellaComponent {
-
+  @Input()NZ:number;
+  constructor(){
+    this.NZ= 0; 
+  } 
 }
