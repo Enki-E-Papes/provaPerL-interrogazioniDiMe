@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TombolaPapessino';
+  numerazzo : number;
+
+  constructor(){
+    this.numerazzo = 0;
+  }
+  cliccanza(N:HTMLInputElement){
+    this.numerazzo = Number(N.value)
+    console.log(this.numerazzo);
+    return false
+  }
 }
