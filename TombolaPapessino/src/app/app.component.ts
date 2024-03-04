@@ -16,7 +16,9 @@ export class AppComponent {
   cliccanza(N:HTMLInputElement){
     this.numerazzo = Number(N.value)
     console.log(this.numerazzo);
-    this.vetto.push(this.numerazzo);
+
+    if(this.vetto.includes(this.numerazzo)){}
+    else{this.vetto.push(this.numerazzo);}
     console.log(this.vetto)
     return false
   }

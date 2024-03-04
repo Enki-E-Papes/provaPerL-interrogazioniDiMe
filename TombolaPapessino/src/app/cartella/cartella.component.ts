@@ -7,7 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class CartellaComponent {
   @Input()NZ:number;
+  @Input()vettoZXo:number[]; // array
   constructor(){
     this.NZ= 0; 
+    this.vettoZXo= [];
   } 
 }
